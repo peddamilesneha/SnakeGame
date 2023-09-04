@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+.bgm{
+    background: url("SnakeBackground.jpg");
+    min-height: 100vh;
+    background-size: 110vw 109vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -8px;
+}
+#scoreLog{
+    position: absolute;
+    top: 35px;
+    right: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Creepster';
+
+}
+
+#board{
+    background: linear-gradient(rgb(125, 208, 229),rgb(102, 225, 143));
+    position: absolute;
+    left: 55px;
+    width: 125vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(red, purple);
+    border: 0.25vmin solid black;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(yellow, orange);
+    border: 0.25vmin solid black;
+    border-radius: 12px;
+}
+.snake{
+    background: linear-gradient(purple , pink);
+    border: 0.25vmin solid black;
+    border-radius: 12px;
+}
